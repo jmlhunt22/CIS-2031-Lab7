@@ -40,12 +40,14 @@ cout << "My oldest friend is " << oldest << " years old." << endl;
 
 
     //❓❓ Lab Question 9:
-    string oldest2 = 0;
-    for( int j = 0; j < 4; j++){
-        if ( friends[j] > oldest2 ){
-            oldest2 = friends[j];
+    oldest = 0;
+    int oldestFriendIndex = 0;
+    for( int i = 0; i < 4; i++){
+        if ( ages[i] > oldest ){
+            oldest = ages[i];
+            oldestFriendIndex = i;
         }
     }
-cout << "My oldest friend is named " << oldest2 << endl;
+cout << "My oldest friend is named " << friends[oldestFriendIndex] << endl;
 
 }
